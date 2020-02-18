@@ -1,0 +1,4 @@
+<RCC>
+    <qresource prefix="NaoUrbiQtRemoteClient">
+    </qresource>
+</RCC>

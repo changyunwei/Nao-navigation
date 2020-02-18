@@ -1,0 +1,1364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WoZControlClient</class>
+ <widget class="QWidget" name="WoZControlClient">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>751</width>
+    <height>794</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WoZControlClient</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>741</width>
+     <height>731</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="layoutWidget_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>381</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QTextBrowser" name="tbUrbiServerMessage"/>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="teUrbiScriptInput"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbUrbiScriptSend">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string>Send UrbiScript</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>417</x>
+      <y>360</y>
+      <width>291</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="7" column="2">
+      <widget class="QPushButton" name="pbForwarding">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Resources/ffup.png</normaloff>Resources/ffup.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QPushButton" name="pbForward">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Resources/forward.jpeg</normaloff>Resources/forward.jpeg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QPushButton" name="pbLeftsiding">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Resources/ffleft.png</normaloff>Resources/ffleft.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QPushButton" name="pbLeft">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Resources/left.jpg</normaloff>Resources/left.jpg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="QPushButton" name="pbStop">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Resources/Stop.png</normaloff>Resources/Stop.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="3">
+      <widget class="QPushButton" name="pbRight">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Resources/right.jpg</normaloff>Resources/right.jpg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="4">
+      <widget class="QPushButton" name="pbRightsiding">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Resources/ffright.png</normaloff>Resources/ffright.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="2">
+      <widget class="QPushButton" name="pbBack">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Resources/back.jpg</normaloff>Resources/back.jpg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2">
+      <widget class="QPushButton" name="pbBackwarding">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Resources/ffdown.png</normaloff>Resources/ffdown.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QPushButton" name="pbTurnLeft">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Resources/rtleft.png</normaloff>Resources/rtleft.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="4">
+      <widget class="QPushButton" name="pbTurnRight">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Resources/rtright.png</normaloff>Resources/rtright.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QDoubleSpinBox" name="dsbVX">
+       <property name="maximum">
+        <double>1.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="value">
+        <double>1.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QDoubleSpinBox" name="dsbVY">
+       <property name="maximum">
+        <double>1.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="value">
+        <double>1.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QDoubleSpinBox" name="dsbVTheta">
+       <property name="maximum">
+        <double>1.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="value">
+        <double>0.300000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QDoubleSpinBox" name="dsbVF">
+       <property name="maximum">
+        <double>1.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="value">
+        <double>1.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="lbVY">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>y</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="lbVTheta">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>theta</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="lbVF">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>f</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" colspan="5">
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="leVX">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="leVY">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLineEdit" name="leVTheta">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QLineEdit" name="leVF">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="lbAV">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Assign</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="lbVX">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>x</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="lbRV">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Recent</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pbWaveHello">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>440</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>WaveHello</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="naohead">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>50</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>200</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>200</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Resources/naohead.png</normaloff>
+      <disabledoff>Resources/naohead.png</disabledoff>
+      <disabledon>Resources/naohead.png</disabledon>Resources/naohead.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>190</width>
+      <height>190</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>411</x>
+      <y>258</y>
+      <width>201</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="9,1">
+     <item>
+      <widget class="QSlider" name="hsldHeadYaw">
+       <property name="minimum">
+        <number>-2000</number>
+       </property>
+       <property name="maximum">
+        <number>2000</number>
+       </property>
+       <property name="tracking">
+        <bool>false</bool>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="leHeadYaw">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>622</x>
+      <y>79</y>
+      <width>52</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <item>
+      <widget class="QLineEdit" name="leHeadPitch">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="vsldHeadPitch">
+       <property name="minimum">
+        <number>-670</number>
+       </property>
+       <property name="maximum">
+        <number>510</number>
+       </property>
+       <property name="tracking">
+        <bool>false</bool>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pbInteraction">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>640</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Interaction</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbElevator">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>500</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Elevator</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbDoor">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>590</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Door</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbWalkSpeech">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>540</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>WalkSpeech</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>240</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Up</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>290</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>left</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>290</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2.0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>290</y>
+      <width>46</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-2.0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbRstHeadPitch">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>50</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>V Reset</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>290</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>right</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbRstHeadYaw">
+    <property name="geometry">
+     <rect>
+      <x>619</x>
+      <y>260</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>H Reset</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>87</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0.51</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>677</x>
+      <y>225</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-0.67</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>77</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Down</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>10</y>
+      <width>331</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Manual Control </string>
+    </property>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>310</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>StopAll</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>371</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Interactioin Behavior</string>
+    </property>
+   </widget>
+   <zorder>groupBox</zorder>
+   <zorder>groupBox_2</zorder>
+   <zorder>layoutWidget_1</zorder>
+   <zorder>layoutWidget_2</zorder>
+   <zorder>pbWaveHello</zorder>
+   <zorder>naohead</zorder>
+   <zorder>layoutWidget_3</zorder>
+   <zorder>layoutWidget_4</zorder>
+   <zorder>pbInteraction</zorder>
+   <zorder>pbElevator</zorder>
+   <zorder>pbDoor</zorder>
+   <zorder>pbWalkSpeech</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>pbRstHeadPitch</zorder>
+   <zorder>label_5</zorder>
+   <zorder>pbRstHeadYaw</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>736</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>4</width>
+     <height>12</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>3</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mortecarlo.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pbForward</sender>
+   <signal>clicked()</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickForward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>577</x>
+     <y>582</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>600</x>
+     <y>528</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbRight</sender>
+   <signal>clicked()</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickRight()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>636</x>
+     <y>612</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>642</x>
+     <y>650</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbBack</sender>
+   <signal>clicked()</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickBackward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>577</x>
+     <y>682</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>638</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbLeft</sender>
+   <signal>clicked()</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickLeft()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>517</x>
+     <y>632</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>487</x>
+     <y>544</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbStop</sender>
+   <signal>clicked()</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickStop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>577</x>
+     <y>632</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>585</x>
+     <y>555</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbTurnLeft</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickTurnLeft(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>412</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>484</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbTurnRight</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickTurnRight(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>696</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>678</x>
+     <y>523</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbLeftsiding</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickLeftsiding(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>412</x>
+     <y>632</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>412</x>
+     <y>644</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbRightsiding</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickRightsiding(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>696</x>
+     <y>632</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>688</x>
+     <y>626</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbForwarding</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickForwarding(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>577</x>
+     <y>512</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>594</x>
+     <y>483</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbBackwarding</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickBackwarding(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>577</x>
+     <y>732</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>572</x>
+     <y>738</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbWaveHello</sender>
+   <signal>clicked()</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickWaveHello()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>249</x>
+     <y>423</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>268</x>
+     <y>414</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbUrbiScriptSend</sender>
+   <signal>clicked()</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickSendUrbiScript()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>133</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>108</x>
+     <y>399</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>vsldHeadPitch</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>vsldOnValueChangedHeadPitch(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>633</x>
+     <y>190</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>678</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hsldHeadYaw</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>hsldOnValueChangedHeadYaw(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>488</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>506</x>
+     <y>322</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leHeadPitch</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>leOnTextChangedHeadPitch(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>632</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>670</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leHeadYaw</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>leOnTextChangedHeadYaw(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>630</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>665</x>
+     <y>322</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbInteraction</sender>
+   <signal>clicked()</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickInteraction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>249</x>
+     <y>593</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>269</x>
+     <y>627</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickStopAllBehavior()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>490</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>523</x>
+     <y>378</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbElevator</sender>
+   <signal>clicked()</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickElevator()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>249</x>
+     <y>463</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>270</x>
+     <y>460</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbDoor</sender>
+   <signal>clicked()</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickDoor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>249</x>
+     <y>553</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>283</x>
+     <y>552</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbWalkSpeech</sender>
+   <signal>clicked()</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickWalkSpeech()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>207</x>
+     <y>527</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>135</x>
+     <y>520</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbRstHeadPitch</sender>
+   <signal>clicked()</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickRstHeadPitch()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>661</x>
+     <y>94</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>706</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbRstHeadYaw</sender>
+   <signal>clicked()</signal>
+   <receiver>WoZControlClient</receiver>
+   <slot>pbOnClickRstHeadYaw()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>669</x>
+     <y>310</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>714</x>
+     <y>297</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pbOnClickForward()</slot>
+  <slot>pbOnClickBackward()</slot>
+  <slot>pbOnClickLeft()</slot>
+  <slot>pbOnClickRight()</slot>
+  <slot>pbOnClickStop()</slot>
+  <slot>pbOnClickForwarding(bool)</slot>
+  <slot>pbOnClickBackwarding(bool)</slot>
+  <slot>pbOnClickLeftsiding(bool)</slot>
+  <slot>pbOnClickRightsiding(bool)</slot>
+  <slot>pbOnClickTurnLeft(bool)</slot>
+  <slot>pbOnClickTurnRight(bool)</slot>
+  <slot>pbOnClickWaveHello()</slot>
+  <slot>pbOnClickSendUrbiScript()</slot>
+  <slot>vsldOnValueChangedHeadPitch(int)</slot>
+  <slot>hsldOnValueChangedHeadYaw(int)</slot>
+  <slot>leOnTextChangedHeadPitch(QString)</slot>
+  <slot>leOnTextChangedHeadYaw(QString)</slot>
+  <slot>pbOnClickInteraction()</slot>
+  <slot>pbOnClickStopAllBehavior()</slot>
+  <slot>pbOnClickElevator()</slot>
+  <slot>pbOnClickDoor()</slot>
+  <slot>pbOnClickWalkSpeech()</slot>
+  <slot>pbOnClickRstHeadPitch()</slot>
+  <slot>pbOnClickRstHeadYaw()</slot>
+ </slots>
+</ui>
